@@ -1,4 +1,5 @@
-﻿class Sokoban:
+
+class Sokoban:
 
     Personaje = 0
     Cajas = 1
@@ -35,7 +36,7 @@
             print(filas)
 
 
-     def mover_arriba(self):
+    def mover_arriba(self):
         # 29 Personaje, espacio
         if self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila - 1][self.personaje_columna] == 4:
             self.mapa[self.personaje_fila][self.personaje_columna] = 4
